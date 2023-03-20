@@ -127,3 +127,86 @@ form {
   color: #fff;
   font-size: 0.7rem;
 }
+
+/* MAIN */
+main {
+  height: fit-content;
+  margin: 0 auto;
+}
+
+main .container {
+  height: 700px;
+  max-width: 100%;
+  gap: 1.1rem;
+}
+
+.main-img {
+  width: 505px;
+  height: 600px;
+  object-fit: cover;
+}
+
+.nav-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-height: 100%;
+  gap: 1rem;
+}
+
+.nav-div {
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-div:hover {
+  filter: brightness(90%);
+  transform: scale(1.01);
+}
+
+.nav-grid img {
+  width: 280px;
+  height: 290px;
+  object-fit: cover;
+}
+
+.nav-grid .img-2 {
+  object-position: top;
+}
+
+.nav-grid .img-3,
+.nav-grid .img-5 {
+  object-position: 80%;
+}
+
+.nav-grid .img-4 {
+  object-position: center;
+}
+
+.nav-p1,
+.nav-p2,
+.nav-p3,
+.nav-p4,
+.nav-p5 {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 0.4rem 1rem;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.main-img,
+.img-2,
+.img-3,
+.img-4,
+.img-5,
+.nav-p1,
+.nav-p2,
+.nav-p3,
+.nav-p4,
+.nav-p5 {
+  pointer-events: none;
+}
