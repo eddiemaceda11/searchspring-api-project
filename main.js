@@ -151,6 +151,31 @@ async function renderPaginationResults(value) {
   return data;
 }
 
+// Checks if user is on first or last page,
+// and hide/show prev/next buttons accordingly
+function checkCurrentPage(page) {
+  if (currentPage < page.pagination.totalPages) {
+    nextPageBtns.forEach((btn) => {
+      btn.style.display = "block";
+    });
+  }
+  if (currentPage === page.pagination.totalPages) {
+    nextPageBtns.forEach((btn) => {
+      btn.style.display = "none";
+    });
+  }
+  if (currentPage > 1) {
+    prevPageBtns.forEach((btn) => {
+      btn.style.display = "block";
+    });
+  }
+  if (currentPage === 1) {
+    prevPageBtns.forEach((btn) => {
+      btn.style.display = "none";
+    });
+  }
+}
+
 // Hides both the prev and next buttons
 function hideButtons() {
   prevPageBtns.forEach((btn) => {
