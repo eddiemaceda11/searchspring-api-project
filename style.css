@@ -615,3 +615,14 @@ section.footer {
     justify-content: center;
   }
 }
+
+@media (max-width: 450px) {
+  .main-img {
+    width: 350px;
+  }
+
+  .pagination-top,
+  .pagination-bottom {
+    width: 300px;
+  }
+}
