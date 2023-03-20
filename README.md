@@ -34,4 +34,5 @@ The following are credits to some visual inspiration, ideas, and guidelines that
 - alexandrahamner and her website Shopily: https://shopily.netlify.app/index.htmlas 
 - alexandrahamner again, for her wonderfully constructed README file, which helped me to structure and organize my own.
 - Searchspring search page application: http://try.searchspring.com/search?q=jeans
+- Tamara Bellis and Jon Ly for their images on https://unsplash.com/
 
