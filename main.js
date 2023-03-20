@@ -197,3 +197,35 @@ search.addEventListener("keypress", async (e) => {
     renderResults(search.value);
   }
 });
+
+// Pagination next
+nextPageBtns.forEach((btn) => {
+  btn.addEventListener("click", async () => {
+    // Update current page
+    currentPage++;
+    // Check to see which page user is currently on
+    // If 1st page, prev button will be hidden
+    // If last page, next button will be hidden
+    checkCurrentPage(data);
+    // Display results, passing in the current btn
+    // selection (either 'prev-page' or next-page') as the
+    // paramater so pagination gets updated properly
+    renderPaginationResults(btn);
+  });
+});
+
+// Pagination prev
+prevPageBtns.forEach((btn) => {
+  btn.addEventListener("click", async () => {
+    // Update current page
+    currentPage--;
+    // Check to see which page user is currently on
+    // If 1st page, prev button will be hidden
+    // If last page, next button will be hidden
+    checkCurrentPage(data);
+    // Display results, passing in the current btn
+    // selection (either 'prev-page' or next-page') as the
+    // paramater so pagination gets updated properly
+    renderPaginationResults(btn);
+  });
+});
