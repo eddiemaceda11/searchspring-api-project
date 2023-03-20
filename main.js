@@ -189,3 +189,11 @@ imgLink5.addEventListener("click", async () => {
 btn.addEventListener("click", async () => {
   renderResults(search.value);
 });
+
+// Run search when user presses Enter key
+search.addEventListener("keypress", async (e) => {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    renderResults(search.value);
+  }
+});
