@@ -97,3 +97,56 @@ async function renderResults(value) {
   scroll();
   return data;
 }
+
+// Renders the results to the page after the pagination
+async function renderPaginationResults(value) {
+  let html = "";
+  // Checks to see whether prev or next pagination
+  // button was clicked, and updates current page
+  // accordingly
+  let pagination = value.classList.contains("next-page") ? (data.pagination.currentPage += 1) : (data.pagination.currentPage -= 1);
+  console.log(pagination);
+
+  const response = await fetch(`http://api.searchspring.net/api/search/search.json?siteId=scmq7n&q=${resultsMessage.textContent}&resultsFormat=native&page=${pagination}`);
+  data = await response.json();
+  data.results.forEach((result) => {
+    // CONDITIONALs
+    // If product has msrp and its greater than price,
+    // add proper style to msrp and price
+
+    // If product image returns empty/error, display a default image
+    if (result.msrp && result.msrp > result.price) {
+      html += `
+          <div class="card">
+            <img class="card-img" src=${result.thumbnailImageUrl} onerror="this.onerror=null;this.src='img/404_page_cover.jpg';" />
+            <h3 class="item-name">${result.name}</h3>
+            <div class="card-pricing">
+              <p style="text-decoration: line-through;">$${result.msrp}.00</p>
+              <p style="color: red; font-weight: 700;">$${result.price}.00</p>
+              <i class="fa-solid fa-cart-shopping" id="add-to-cart"></i>
+            </div>
+          </div>
+        `;
+    } else {
+      // If price is greater than or equal to msrp,
+      // do not display msrp
+      html += `
+          <div class="card">
+            <img class="card-img" src=${result.thumbnailImageUrl} onerror="this.onerror=null;this.src='img/404_page_cover.jpg';" />
+            <h3 class="item-name">${result.name}</h3>
+            <div class="card-pricing">
+            <p style="font-weight: 700;">$${result.price}.00</p>
+              <i class="fa-solid fa-cart-shopping" id="add-to-cart"></i>
+            </div>
+          </div>
+        `;
+    }
+  });
+  // Clear previous grid container results
+  gridDisplay.innerHTML = "";
+  // Add new result cards to grid container
+  gridDisplay.innerHTML += html;
+  // Scroll to results section
+  scroll();
+  return data;
+}
