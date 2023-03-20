@@ -229,3 +229,15 @@ prevPageBtns.forEach((btn) => {
     renderPaginationResults(btn);
   });
 });
+
+// Add to cart on user click
+document.body.addEventListener("click", (e) => {
+  const cartTotal = document.getElementById("cart-total");
+  // Max number of items allowed in cart is 99
+  if (cartTotal.innerText >= "99") return;
+
+  // Update cart total by +1
+  if (e.target.id === "add-to-cart") {
+    cartTotal.innerText++;
+  }
+});
