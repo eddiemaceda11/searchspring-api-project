@@ -184,3 +184,8 @@ imgLink5.addEventListener("click", async () => {
   let searchParameter = "shoes";
   renderResults(searchParameter);
 });
+
+// Run search when user clicks search button
+btn.addEventListener("click", async () => {
+  renderResults(search.value);
+});
