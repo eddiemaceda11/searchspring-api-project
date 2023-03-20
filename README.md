@@ -4,7 +4,7 @@
 <table>
 <tr>
 <td align="center">
-  This is a project that I designed and developed using the Searchspring API. The search features allows for ther User to search clothing, shoes, accessories, and more. The website is also fully responsive.
+  This is a project that I designed and developed using the Searchspring API. The search features allows for the User to search clothing, shoes, accessories, and more. The website is also fully responsive.
 </td>
 </tr>
 </table>
