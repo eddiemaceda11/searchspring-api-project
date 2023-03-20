@@ -151,6 +151,16 @@ async function renderPaginationResults(value) {
   return data;
 }
 
+// Hides both the prev and next buttons
+function hideButtons() {
+  prevPageBtns.forEach((btn) => {
+    btn.style.display = "none";
+  });
+  nextPageBtns.forEach((btn) => {
+    btn.style.display = "none";
+  });
+}
+
 // NAV IMG LINKS
 // If user clicks on one of the nav images,
 // render the selected nav results to the page
