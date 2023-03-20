@@ -150,3 +150,37 @@ async function renderPaginationResults(value) {
   scroll();
   return data;
 }
+
+// NAV IMG LINKS
+// If user clicks on one of the nav images,
+// render the selected nav results to the page
+
+// 'Shop all' nav link
+imgLink1.addEventListener("click", async () => {
+  let searchParameter = "";
+  renderResults(searchParameter);
+});
+
+// 'Dresses' nav link
+imgLink2.addEventListener("click", async () => {
+  let searchParameter = "dress";
+  renderResults(searchParameter);
+});
+
+// 'Tops' nav link
+imgLink3.addEventListener("click", async () => {
+  let searchParameter = "top";
+  renderResults(searchParameter);
+});
+
+// 'Pants' nav link
+imgLink4.addEventListener("click", async () => {
+  let searchParameter = "pants";
+  renderResults(searchParameter);
+});
+
+// 'Shoes' nav link
+imgLink5.addEventListener("click", async () => {
+  let searchParameter = "shoes";
+  renderResults(searchParameter);
+});
