@@ -284,3 +284,76 @@ main .container {
   font-size: 1.2rem;
   cursor: pointer;
 }
+
+/* FOOTER */
+section.footer {
+  background-color: rgb(245, 255, 252);
+  height: 460px;
+  position: relative;
+  margin-top: auto;
+  width: 100%;
+}
+
+.footer-1,
+.footer-2,
+.footer-3 {
+  color: rgba(7, 146, 130, 0.791);
+  position: absolute;
+  font-size: 1rem;
+}
+
+.footer-1 {
+  top: 10%;
+  left: 5%;
+}
+
+.footer-2 {
+  top: 10.2%;
+  left: 30%;
+}
+
+.footer-3 {
+  top: 10.2%;
+  right: 10%;
+}
+
+.footer-1 h2,
+.footer-2 h2,
+.footer-3 h2 {
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+.footer-1 h4,
+.footer-2 h4,
+.footer-3 h4 {
+  margin-top: 1.2rem;
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+.socials {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.4rem;
+  margin-top: 1.8rem;
+  align-items: center;
+}
+
+.footer-close {
+  border-top: 0.5px solid rgba(7, 146, 130, 0.791);
+  height: 5rem;
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  width: 90%;
+}
+
+.footer-close p {
+  color: rgba(7, 146, 130, 0.791);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
