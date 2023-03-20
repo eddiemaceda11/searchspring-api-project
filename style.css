@@ -407,3 +407,68 @@ section.footer {
   align-items: center;
   justify-content: center;
 }
+
+/********************/
+/****Media Queries***/
+/********************/
+@media (max-width: 1150px) {
+  /* HEADER */
+  form {
+    width: 28rem;
+  }
+
+  /* MAIN */
+  main {
+    width: fit-content;
+  }
+
+  main .container {
+    gap: 0.7rem;
+  }
+
+  .main-img {
+    width: 46vw;
+    height: 595px;
+    margin-top: 0.3rem;
+  }
+
+  .nav-grid {
+    gap: 0.8rem;
+  }
+
+  .nav-grid img {
+    width: 23vw;
+    margin-bottom: -0.3rem;
+  }
+  /* RESULTS */
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    width: 700px;
+    gap: 1rem;
+    grid-row-gap: 1rem;
+  }
+
+  .card {
+    height: 430px;
+    padding-bottom: 1rem;
+    width: 220px;
+  }
+
+  .card-img {
+    min-height: auto;
+    height: 330px;
+    width: 100%;
+  }
+
+  .item-name {
+    max-width: 90%;
+  }
+
+  .pagination-top,
+  .pagination-bottom {
+    padding: 0 2rem inherit 2rem;
+    max-width: 100%;
+    width: 800px;
+  }
+}
