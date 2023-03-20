@@ -43,7 +43,7 @@ async function renderResults(value) {
   let html = "";
 
   // Make a call to the Searchspring API
-  const response = await fetch(`http://api.searchspring.net/api/search/search.json?siteId=scmq7n&q=${value}&resultsFormat=native&page=${currentPage}`);
+  const response = await fetch(`https://api.searchspring.net/api/search/search.json?siteId=scmq7n&q=${value}&resultsFormat=native&page=${currentPage}`);
   data = await response.json();
   data.results.forEach((result) => {
     // CONDITIONALs
@@ -107,7 +107,7 @@ async function renderPaginationResults(value) {
   let pagination = value.classList.contains("next-page") ? (data.pagination.currentPage += 1) : (data.pagination.currentPage -= 1);
   console.log(pagination);
 
-  const response = await fetch(`http://api.searchspring.net/api/search/search.json?siteId=scmq7n&q=${resultsMessage.textContent}&resultsFormat=native&page=${pagination}`);
+  const response = await fetch(`https://api.searchspring.net/api/search/search.json?siteId=scmq7n&q=${resultsMessage.textContent}&resultsFormat=native&page=${pagination}`);
   data = await response.json();
   data.results.forEach((result) => {
     // CONDITIONALs
