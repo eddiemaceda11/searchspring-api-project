@@ -542,3 +542,76 @@ section.footer {
     margin-left: 0.15rem;
   }
 }
+
+@media (max-width: 650px) {
+  /* HEADER */
+  header {
+    height: 120px;
+  }
+
+  form {
+    width: 18rem;
+  }
+
+  /* MAIN */
+  .nav-div {
+    width: 100%;
+  }
+
+  .nav-grid {
+    display: none;
+  }
+
+  .main-img {
+    width: 440px;
+  }
+
+  /* RESULTS */
+
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    height: 525px;
+    width: 285px;
+    align-self: center;
+  }
+
+  .card-img {
+    min-height: 420px;
+    height: fit-content;
+  }
+
+  .item-name {
+    margin-top: 0.4rem;
+  }
+
+  .card-pricing {
+    margin-top: 0.2rem;
+  }
+
+  .pagination-top,
+  .pagination-bottom {
+    max-width: 100%;
+    width: 360px;
+  }
+
+  .pagination-top {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .pagination-bottom {
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
