@@ -377,6 +377,7 @@ section.footer {
 .footer-1 h4,
 .footer-2 h4,
 .footer-3 h4 {
+  cursor: pointer;
   margin-top: 1.2rem;
   font-weight: 300;
   font-size: 0.8rem;
@@ -388,6 +389,7 @@ section.footer {
   font-size: 1.4rem;
   margin-top: 1.8rem;
   align-items: center;
+  cursor: pointer;
 }
 
 .footer-close {
