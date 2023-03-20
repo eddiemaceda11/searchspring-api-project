@@ -29,10 +29,6 @@ body {
   height: 100%;
 }
 
-.hidden {
-  display: none;
-}
-
 /* HEADER */
 header {
   height: 70px;
@@ -177,13 +173,16 @@ main .container {
   object-position: top;
 }
 
-.nav-grid .img-3,
-.nav-grid .img-5 {
+.nav-grid .img-3 {
   object-position: 80%;
 }
 
 .nav-grid .img-4 {
   object-position: center;
+}
+
+.nav-grid .img-5 {
+  object-position: 30%;
 }
 
 .nav-p1,
@@ -406,6 +405,10 @@ section.footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.hidden {
+  display: none;
 }
 
 /********************/
