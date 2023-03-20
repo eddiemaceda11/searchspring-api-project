@@ -186,6 +186,11 @@ function hideButtons() {
   });
 }
 
+// Scroll on search
+function scroll() {
+  results.scrollIntoView({ behavior: "smooth" });
+}
+
 // NAV IMG LINKS
 // If user clicks on one of the nav images,
 // render the selected nav results to the page
