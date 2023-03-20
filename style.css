@@ -29,6 +29,10 @@ body {
   height: 100%;
 }
 
+.hidden {
+  display: none;
+}
+
 /* HEADER */
 header {
   height: 70px;
