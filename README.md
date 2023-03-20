@@ -25,7 +25,7 @@ Here is a live demo : https://summerlyvine.netlify.app/
 - Uses Fetch API and Async/Await to make HTTP Requests to the Search API.
 - Search bar with search button to allow for custom user input.
 - "Add to cart" functionality that allows the User to add items to their shopping cart.
-- Responsive website.
+- Responsive Design.
 
 ## Credits
 
