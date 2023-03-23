@@ -1,4 +1,5 @@
 # Summerly Vine
+
 ![](img/summerly-screenshot.png)
 
 <table>
@@ -31,8 +32,7 @@ Here is a live demo : https://summerlyvine.netlify.app/
 
 The following are credits to some visual inspiration, ideas, and guidelines that I used during the development and design of this project.
 
-- alexandrahamner and her website Shopily: https://shopily.netlify.app/index.htmlas 
+- alexandrahamner and her website Shopily: https://shopily.netlify.app/index.html
 - alexandrahamner again, for her wonderfully constructed README file, which helped me to structure and organize my own.
 - Searchspring search page application: http://try.searchspring.com/search?q=jeans
 - Tamara Bellis and Jon Ly for their images on https://unsplash.com/
-
